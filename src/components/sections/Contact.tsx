@@ -18,10 +18,12 @@ export function Contact() {
     message: "",
   });
   const [status, setStatus] = useState<FormStatus>("idle");
+  const [errorMessage, setErrorMessage] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
+    setErrorMessage("");
 
     try {
       const response = await fetch("/api/contact", {
@@ -30,14 +32,33 @@ export function Contact() {
         body: JSON.stringify(formData),
       });
 
+      const text = await response.text();
+      let apiError: string | undefined;
+      try {
+        const data = JSON.parse(text);
+        apiError =
+          typeof data?.error === "string" ? data.error : undefined;
+      } catch {
+        // Response wasn't JSON (e.g. HTML error page)
+        apiError = undefined;
+      }
+
       if (!response.ok) {
-        throw new Error("Failed to submit form");
+        setErrorMessage(
+          apiError ||
+            (response.status === 500
+              ? "Server error. Check that RESEND_API_KEY is set in Vercel and redeploy."
+              : "Something went wrong. Please try again.")
+        );
+        setStatus("error");
+        return;
       }
 
       setStatus("success");
       setFormData({ name: "", email: "", phone: "", company: "", message: "" });
     } catch (error) {
       console.error("Form submission error:", error);
+      setErrorMessage("Something went wrong. Please try again.");
       setStatus("error");
     }
   };
@@ -186,8 +207,8 @@ export function Contact() {
 
                 {status === "error" && (
                   <div className="flex items-center gap-2 text-red-500">
-                    <AlertCircle className="w-5 h-5" />
-                    <span>Something went wrong. Please try again.</span>
+                    <AlertCircle className="w-5 h-5 shrink-0" />
+                    <span>{errorMessage}</span>
                   </div>
                 )}
 

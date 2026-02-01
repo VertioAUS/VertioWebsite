@@ -10,23 +10,23 @@ const benefits = [
     icon: Rocket,
     title: "Speed to Market",
     description:
-      "Compress integration timelines from years to weeks with automated compliance workflows.",
-    metric: "90%",
+      "Compress integration timelines from years to weeks by auto-generating ready-to-use code.",
+    metric: "95%",
     metricLabel: "faster",
   },
   {
     icon: Users,
     title: "Democratise Access",
     description:
-      "Eliminate consultant dependency, making compliance accessible to SMEs and startups.",
-    metric: "$200K+",
+      "Remove the need for expensive consultants, allowing SMEs to enter markets previously accessible only to well-funded incumbents.",
+    metric: "$150K+",
     metricLabel: "saved",
   },
   {
     icon: ShieldCheck,
     title: "Risk Reduction",
     description:
-      "Validate via Digital Twin before deployment, catching issues before they become problems.",
+      "Validate systems against a Digital Twin before deployment, preventing security misconfigurations.",
     metric: "0",
     metricLabel: "compliance failures",
   },
@@ -34,7 +34,7 @@ const benefits = [
     icon: RefreshCw,
     title: "Continuous Compliance",
     description:
-      "Real-time alerts for regulatory changes keep you audit-ready at all times.",
+      "24/7 monitoring alerts you to regulatory changes, ensuring you never drift out of compliance.",
     metric: "24/7",
     metricLabel: "monitoring",
   },
@@ -51,11 +51,11 @@ export function WhyVertio() {
             Why Vertio
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Transform Your Compliance Journey
+            Built for the Future of Digital Health.
           </h2>
           <p className="text-text-secondary max-w-2xl mx-auto">
-            We&apos;re not just another compliance tool. We&apos;re your partner in
-            navigating Australia&apos;s digital health ecosystem.
+            We shift the model from high-cost consulting to scalable software,
+            significantly lowering barriers for health innovators.
           </p>
         </FadeIn>
 

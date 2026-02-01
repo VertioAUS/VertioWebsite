@@ -47,3 +47,9 @@ import { staggerContainer, staggerItem } from "@/lib/animations";
 ### Path Alias
 
 Use `@/*` to import from `src/*` (configured in tsconfig.json).
+
+## Deployment
+
+This site is deployed on **Vercel** and auto-deploys when pushing to the `main` branch.
+- Production URL: https://vertio.com.au
+- GitHub repo: VertioAUS/VertioWebsite
