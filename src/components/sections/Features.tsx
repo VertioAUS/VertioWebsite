@@ -44,8 +44,8 @@ const features = [
     subtitle: "Compliance Maintenance",
     description:
       "Post-certification, the platform provides 24/7 monitoring to detect regulatory drift and data standard updates, ensuring long-term audit readiness.",
-    color: "#FB4A02",
-    gradient: "from-accent-orange/20 to-accent-orange/5",
+    color: "#FFB020",
+    gradient: "from-[#FFB020]/20 to-[#FFB020]/5",
   },
 ];
 
