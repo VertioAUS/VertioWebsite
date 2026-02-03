@@ -84,11 +84,11 @@ export function Contact() {
             Get Started
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Join the Waiting List
+            Contact Us
           </h2>
           <p className="text-text-secondary max-w-xl mx-auto">
-            Be among the first to access Vertio when we launch. Get early access
-            and exclusive updates.
+            Have questions or want to learn more about Vertio? We&apos;d love to
+            hear from you.
           </p>
         </FadeIn>
 
@@ -229,7 +229,7 @@ export function Contact() {
                     </span>
                   ) : (
                     <span className="flex items-center gap-2">
-                      Join Waiting List
+                      Contact Us
                       <Send className="w-5 h-5" />
                     </span>
                   )}

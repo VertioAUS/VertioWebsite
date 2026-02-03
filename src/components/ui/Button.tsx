@@ -49,6 +49,25 @@ export function Button({
 
   if (href) {
     const isHash = href.startsWith("#");
+    const isExternal = href.startsWith("http://") || href.startsWith("https://");
+
+    if (isExternal) {
+      return (
+        <motion.a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={combinedClassName}
+          variants={buttonHover}
+          initial="rest"
+          whileHover="hover"
+          whileTap="tap"
+        >
+          {children}
+        </motion.a>
+      );
+    }
+
     return (
       <motion.div
         variants={buttonHover}

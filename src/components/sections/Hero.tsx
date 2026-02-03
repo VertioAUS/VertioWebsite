@@ -59,8 +59,8 @@ export function Hero() {
             variants={staggerItem}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button href="#contact" size="lg">
-              Join Waiting List
+            <Button href="https://cal.com/vertioaus" size="lg">
+              Book a Demo
             </Button>
             <Button href="#solution" variant="outline" size="lg">
               Learn More

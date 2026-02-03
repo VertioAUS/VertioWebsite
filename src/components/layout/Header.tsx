@@ -64,8 +64,8 @@ export function Header() {
 
             {/* CTA Button */}
             <div className="hidden md:block">
-              <Button href="#contact" size="sm">
-                Join Waiting List
+              <Button href="https://cal.com/vertioaus" size="sm">
+                Book a Demo
               </Button>
             </div>
 
@@ -118,8 +118,8 @@ export function Header() {
                 transition={{ delay: navItems.length * 0.1 }}
                 className="mt-4"
               >
-                <Button href="#contact" size="lg" className="w-full">
-                  Join Waiting List
+                <Button href="https://cal.com/vertioaus" size="lg" className="w-full">
+                  Book a Demo
                 </Button>
               </motion.div>
             </nav>
