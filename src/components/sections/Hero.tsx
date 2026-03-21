@@ -29,9 +29,11 @@ export function Hero() {
             variants={staggerItem}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-8"
           >
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+            <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
+            </svg>
             <span className="text-sm text-text-secondary">
-              Now accepting early access signups
+              Early access fully subscribed — <a href="#contact" className="text-primary font-medium hover:underline">Join the waitlist</a>
             </span>
           </motion.div>
 
