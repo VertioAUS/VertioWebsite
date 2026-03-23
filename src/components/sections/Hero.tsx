@@ -33,7 +33,7 @@ export function Hero() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
             </svg>
             <span className="text-sm text-text-secondary">
-              Early access fully subscribed — <a href="#contact" className="text-primary font-medium hover:underline">Join the waitlist</a>
+              Early access fully booked — <a href="#contact" className="text-primary font-medium hover:underline">Reserve your spot</a>
             </span>
           </motion.div>
 
