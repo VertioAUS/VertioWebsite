@@ -30,7 +30,7 @@ export function Testimonials() {
     <section className="py-24 bg-card relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background/30 to-transparent pointer-events-none" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
           <span className="inline-block text-primary text-sm font-semibold tracking-wider uppercase mb-4">
             Testimonials

@@ -13,7 +13,7 @@ const features = [
     title: "The Architect",
     subtitle: "Intelligent Scoping",
     description:
-      "Our AI ingests regulatory frameworks and instantly translates them into a specific technical roadmap and security architecture tailored to your use case.",
+      "Determines exactly which use cases, web services, and conformance requirements apply to your specific product. You know what to build before writing a line of code.",
     color: "#00D4AA",
     gradient: "from-primary/20 to-primary/5",
   },
@@ -21,9 +21,9 @@ const features = [
     id: "builder",
     icon: Wrench,
     title: "The Builder",
-    subtitle: "Automated Implementation",
+    subtitle: "Pre-Built Compliance Code",
     description:
-      "Unlike passive checklists, our core engine actively generates the SDKs and API connectors required to bridge your application with government health networks.",
+      "Production-ready SDK packages you install into your own system, regardless of framework. Covers identifier validation, SOAP integration, status transition logic, mock testing, and PII-safe audit logging across HI, MHR, and EP. Vertio maintains the conformance logic as specifications evolve.",
     color: "#00C2FF",
     gradient: "from-accent-cyan/20 to-accent-cyan/5",
   },
@@ -43,15 +43,15 @@ const features = [
     title: "The Guardian",
     subtitle: "Compliance Maintenance",
     description:
-      "Post-certification, the platform provides 24/7 monitoring to detect regulatory drift and data standard updates, ensuring long-term audit readiness.",
-    color: "#FFB020",
-    gradient: "from-[#FFB020]/20 to-[#FFB020]/5",
+      "Post-certification monitoring that detects regulatory changes and data standard updates, keeping your system audit-ready without manual tracking.",
+    color: "#FB4A02",
+    gradient: "from-accent-orange/20 to-accent-orange/5",
   },
 ];
 
 export function Features() {
   return (
-    <section id="solution" className="py-24 bg-background relative overflow-hidden">
+    <section id="solution" className="pt-8 pb-24 bg-background relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent-purple/5 rounded-full blur-[100px] pointer-events-none" />
@@ -65,8 +65,7 @@ export function Features() {
             The Four Pillars of Compliance
           </h2>
           <p className="text-text-secondary max-w-2xl mx-auto">
-            A comprehensive platform that handles every stage of your digital health
-            compliance journey.
+            No Australian healthcare vendor should spend months on conformance when they could spend weeks. Vertio handles every stage.
           </p>
         </FadeIn>
 
@@ -81,7 +80,7 @@ export function Features() {
             <motion.div key={feature.id} variants={staggerItem}>
               <Card
                 variant="bordered"
-                className={`h-full p-8 bg-gradient-to-br ${feature.gradient} hover:border-[${feature.color}]/50 group`}
+                className={`h-full p-8 bg-gradient-to-br ${feature.gradient} hover:border-border-hover group`}
               >
                 <div
                   className="inline-flex items-center justify-center w-14 h-14 rounded-xl mb-6 transition-transform group-hover:scale-110"

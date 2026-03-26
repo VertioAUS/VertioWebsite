@@ -28,9 +28,9 @@ const problems = [
 
 export function ComplianceCliff() {
   return (
-    <section className="py-24 relative overflow-hidden bg-[#13161c]">
+    <section className="py-24 relative overflow-hidden bg-card">
       {/* Gradient overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#161a22] via-[#13161c] to-[#0f1115]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-card-elevated via-card to-background" />
 
       {/* Subtle warm glow for visual interest */}
       <div className="absolute inset-0">
@@ -66,7 +66,7 @@ export function ComplianceCliff() {
               className="group"
             >
               <div className="relative h-full rounded-2xl p-[1px] bg-gradient-to-b from-white/10 via-white/5 to-transparent">
-                <div className="relative h-full bg-gradient-to-b from-[#0f1318] to-[#0a0d11] rounded-2xl p-8 overflow-hidden">
+                <div className="relative h-full bg-gradient-to-b from-card to-background rounded-2xl p-8 overflow-hidden">
                   {/* Inner glow on hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 

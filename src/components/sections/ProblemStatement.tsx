@@ -17,7 +17,7 @@ export function ProblemStatement() {
   const particles = PARTICLES;
 
   return (
-    <section className="pt-12 pb-24 bg-background relative overflow-hidden">
+    <section className="py-16 bg-background relative overflow-hidden">
       {/* Subtle background particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {particles.map((p) => (
@@ -234,8 +234,8 @@ function ChartComponent() {
         {/* X-axis labels */}
         <div className="absolute -bottom-6 left-0 right-0 flex justify-between text-xs text-text-muted">
           <span>1 week</span>
-          <span>2 week</span>
-          <span>3 week</span>
+          <span>2 weeks</span>
+          <span>3 weeks</span>
           <span>4 weeks</span>
         </div>
       </div>
