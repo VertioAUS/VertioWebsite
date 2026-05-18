@@ -26,7 +26,7 @@ const benefits = [
     icon: ShieldCheck,
     title: "Risk Reduction",
     description:
-      "Validate systems against a Digital Twin before deployment, preventing security misconfigurations.",
+      "Our connection to ADHA systems is built and assessed against their full conformance requirements. We track regulatory changes and update the middleware when they land, so your integration stays compliant without your team chasing notices.",
     metric: "0",
     metricLabel: "compliance failures",
   },
